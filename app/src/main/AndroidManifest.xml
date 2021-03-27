@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.agenda">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/walmart_logo_min"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CriarUsuarioActivity" />
+        <activity android:name=".AgendaCompromissosActivity" />
+        <activity android:name=".NovoCompromissoActivity" />
+        <activity android:name=".ListaCompromissosDia" />
+        <activity android:name=".DetalheCompromisso" />
+        <activity android:name=".IncluirAlarmeActivity"></activity>
+        <receiver  android:name=".Alarme"></receiver>
+    </application>
+
+</manifest>
